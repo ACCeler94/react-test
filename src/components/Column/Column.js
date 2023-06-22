@@ -13,7 +13,7 @@ const Column = (props) => {
       <ul className={styles.cards}>
         {cards.map(card => <Card key={card.id} title={card.title} />)}
       </ul>
-      <CardForm action={props.action} columnId={props.id} />
+      <CardForm columnId={props.id} />
     </article >
   )
 }
