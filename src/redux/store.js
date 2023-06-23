@@ -24,6 +24,11 @@ export const getFilteredCards = ({ cards, searchQuery }, columnId) => cards
 
 export const getAllColumns = ({ columns }) => columns
 
+// action creators
+export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
+export const addCard = payload => ({ type: 'ADD_CARD', payload });
+export const updateSearch = payload => ({ type: 'UPDATE_SEARCH_QUERY', payload })
+
 
 const store = createStore(
   reducer,
