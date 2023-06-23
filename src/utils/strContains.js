@@ -1,0 +1,1 @@
+export const strContains = (title, searchQuery) => title.toUpperCase().includes(searchQuery.toUpperCase());
