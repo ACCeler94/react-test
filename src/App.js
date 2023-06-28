@@ -4,6 +4,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Favorite } from './components/Favorite/Favorite';
 import { About } from './components/About/About';
 import { Routes, Route } from 'react-router-dom';
+import { Redirect } from './components/Redirect/Redirect';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/favorite" element={<Favorite />} />
+          <Route path="*" element={<Redirect />} />
         </Routes>
       </Container>
     </main>
