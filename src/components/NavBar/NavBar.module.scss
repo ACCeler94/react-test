@@ -6,6 +6,8 @@ nav {
   background-color: darken($color-dark, 3%);
   width: 100%;
 
+
+
   a {
     text-decoration: none;
     color: $color-light;
@@ -14,6 +16,11 @@ nav {
   a:visited {
     color: $color-light;
   }
+
+  a.linkActive {
+    color: $color-warning;
+  }
+
 }
 
 .navContent {
