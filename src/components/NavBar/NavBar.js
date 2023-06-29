@@ -2,7 +2,7 @@ import Container from '../Container/Container';
 import styles from './NavBar.module.scss';
 import { NavLink, Link } from 'react-router-dom';
 
-export const NavBar = () => {
+const NavBar = () => {
 
   return (
     <nav>
@@ -19,3 +19,5 @@ export const NavBar = () => {
     </nav >
   )
 }
+
+export default NavBar;

@@ -1,4 +1,4 @@
-import { PageTitle } from '../PageTitle/PageTitle';
+import PageTitle from '../PageTitle/PageTitle';
 import styles from './Hero.module.scss';
 
 export const Hero = () => {

@@ -1,9 +1,9 @@
 import Button from "../Button/Button";
-import { PageTitle } from "../PageTitle/PageTitle";
+import PageTitle from "../PageTitle/PageTitle";
 import styles from './Redirect.module.scss';
 import { Link } from 'react-router-dom';
 
-export const Redirect = () => {
+const Redirect = () => {
 
   return (
     <div className={styles.redirectContainer}>
@@ -12,3 +12,5 @@ export const Redirect = () => {
     </div>
   )
 }
+
+export default Redirect;

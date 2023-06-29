@@ -22,7 +22,11 @@ const reducer = (state, action) => {
 export const getFilteredCards = ({ cards, searchQuery }, columnId) => cards
   .filter(card => card.columnId === columnId && strContains(card.title, searchQuery));
 
-export const getAllColumns = ({ columns }) => columns
+export const getAllLists = ({ lists }) => lists;
+
+export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId);
+
+export const getAllColumnsByList = ({ columns }, listId) => columns.filter(column => column.listId === listId);
 
 // action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });

@@ -1,8 +1,8 @@
-import { PageTitle } from '../PageTitle/PageTitle';
+import PageTitle from '../PageTitle/PageTitle';
 import styles from './About.module.scss';
 
 
-export const About = () => {
+const About = () => {
 
   return (
     <div className={styles.container}>
@@ -11,3 +11,5 @@ export const About = () => {
     </div>
   )
 }
+
+export default About;

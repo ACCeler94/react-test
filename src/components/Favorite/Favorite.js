@@ -1,7 +1,7 @@
-import { PageTitle } from '../PageTitle/PageTitle';
+import PageTitle from '../PageTitle/PageTitle';
 import styles from './Favorite.module.scss';
 
-export const Favorite = () => {
+const Favorite = () => {
 
   return (
     <div className={styles.container}>
@@ -10,3 +10,5 @@ export const Favorite = () => {
     </div>
   )
 }
+
+export default Favorite;
