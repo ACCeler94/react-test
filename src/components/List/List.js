@@ -1,9 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { getAllColumnsByList, getListById } from "../../redux/store";
 import Column from "../Column/Column";
 import ColumnForm from "../ColumnForm/ColumnForm";
 import styles from "./List.module.scss";
 import { useSelector } from 'react-redux';
+import SearchForm from "../SearchForm/SearchForm";
 
 const List = () => {
 
@@ -13,7 +14,7 @@ const List = () => {
   console.log(listData, 'listData')
 
 
-
+  if (!listData) return <Navigate to="/" />
 
   return (
     <div className={styles.list}>
@@ -22,6 +23,7 @@ const List = () => {
       <p className={styles.description}>
         {listData.description}
       </p>
+      <SearchForm />
       <section className={styles.columns}>
         {columns.map(column => <Column key={column.id} {...column} />)}
       </section>

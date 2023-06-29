@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 import styles from "./SearchForm.module.scss"
@@ -10,6 +10,11 @@ const SearchForm = e => {
 
   const [search, setSearch] = useState('');
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(updateSearch(''))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
