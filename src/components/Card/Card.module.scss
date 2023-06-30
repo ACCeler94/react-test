@@ -1,4 +1,6 @@
+@use "sass:math";
 @import '../../styles/settings.scss';
+
 
 .card {
   position: relative;
@@ -10,4 +12,16 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+}
+
+.icon::before {
+  padding-right: $base-size;
+  font-size: ($base-size * 1.15);
+  vertical-align: middle;
+  position: relative;
+
+}
+
+.isFavorite {
+  color: $color-favorite;
 }
