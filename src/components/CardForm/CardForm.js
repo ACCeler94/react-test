@@ -4,7 +4,7 @@ import TextInput from '../TextInput/TextInput';
 import styles from './CardForm.module.scss';
 import { useState } from 'react';
 import shortid from 'shortid';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux';
 
 const CardForm = (props) => {
 
